@@ -8,6 +8,21 @@ body {
       display: flex;
     justify-content: center;
     align-items: center;
+   background-color: rgba(0, 0, 0, 0.5);
+    background-color: #646464;
+    position: relative;
+    z-index: -2;
+}
+.MD-fon{
+ background-image: url("./modalWindowFon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+      width: 576px;
+    height: 131px;
+    position: absolute;
+    top: 300px;
+    left: 530px;
+    z-index: 0;
 }
 .modalWindow {
       flex-direction: column;  /* додай це */
@@ -17,9 +32,10 @@ body {
     height: 316px;
     display: flex;
     justify-content: center;
- background-image: url("./modalWindowFon.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
+background-color: white;
+opacity: 1;
+border-radius: 20px;
+/* display: none; */
 }
 .MD-mainText{
     /* margin-top: 30px; */
@@ -65,6 +81,8 @@ color: #000000;
     display: flex;
     flex-direction: column;
     margin-top: 30px;
+    position: relative;
+    z-index: 3;
 }
 .MD-logIn-input1{
     border-radius: 20px;
@@ -94,6 +112,65 @@ color: #000000;
 }
 .MD-cross{
   position: absolute;
-  top: 100px;
-  right: 300px;
+  top: 170px;
+  right: 210px;
+}
+.MD-logIn-zag{ 
+    position: static;
+margin-bottom: 20px;
+/* margin-left: 10px; */
+    /* Введіть своє ім’я: */
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+text-align: center;
+
+color: #000000;
+
+
+}
+.MD-thanks{
+    width: 463px;
+    height: 245px;
+    background-color: white;
+    border-radius: 20px;
+     margin-top: 154px;
+     display: none;
+}
+.MD-thanks-fon{
+  background-image: url("./modalWindowFon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+      width: 378px;
+    height: 106px;
+    position: absolute;
+    top: 230px;
+    left: 580px;
+    z-index: 0;  
+}
+.MD-thanks-zag{
+    /* Дякую за підписку! */
+
+
+margin-top: 15px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+
+color: #000000;
+
+
+}
+.MD-thanks-cross{
+    position: absolute;
+  top: 170px;
+  right: 270px;
 }
